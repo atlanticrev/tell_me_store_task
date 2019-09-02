@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: #141b1c;
+}
+
+.colons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.colon {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    min-height: 647px;
+    width: 320px;
+    /* Индивидуальное позиционирование? */
+    margin: 6px;
+    background-color: #334247;
+}
+
+.colon__header {
+    padding: 30px;
+    text-align: center;
+}
+
+.colon__header > h2 {
+    margin: 0 0 5px 0;
+}
+
+.colon__price {
+    height: 70px;
+    padding: 8px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    background-color: #5bb189;
+}
+
+.colon__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.colon__services {
+    margin: 0;
+}
+
+.colon__services > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.colon__services > ul > li {
+    min-height: 42px;
+    line-height: 40px;
+    padding: 0 50px;
+    font-size: 13px;
+}
+
+.colon__services > ul > li:nth-child(2n-1) {
+    background-color: #2e3b3f;
+}
+
+.colon__action-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 29px;
+    margin: auto 0 0;
+}
+
+button {
+    width: 130px;
+    height: 34px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #5bb189;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
