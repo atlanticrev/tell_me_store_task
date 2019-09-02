@@ -15,8 +15,9 @@ body {
 .colon {
     display: flex;
     flex-direction: column;
+    /* Нужно ли это? */
     align-self: stretch;
-    min-height: 647px;
+    /*min-height: 647px;*/
     width: 320px;
     /* Индивидуальное позиционирование? */
     margin: 6px;
@@ -24,12 +25,17 @@ body {
 }
 
 .colon__header {
-    padding: 30px;
+    padding: 28px;
     text-align: center;
 }
 
 .colon__header > h2 {
-    margin: 0 0 5px 0;
+    font-size: 29px;
+    margin: 0;
+}
+
+.colon__header > span {
+    font-size: 18px;
 }
 
 .colon__price {
@@ -59,14 +65,20 @@ body {
 }
 
 .colon__services > ul {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    min-height: 250px;
 }
 
 .colon__services > ul > li {
-    min-height: 42px;
-    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
     padding: 0 50px;
     font-size: 13px;
 }
@@ -80,7 +92,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 29px;
+    padding: 33px;
     margin: auto 0 0;
 }
 
