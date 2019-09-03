@@ -1,0 +1,44 @@
+@import "variables";
+
+@mixin colon-services ($colon-main-color) {
+
+  margin: 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    min-height: 250px;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      padding: 0 15px;
+      font-size: 13px;
+      white-space: nowrap;
+
+      &:nth-child(2n-1) {
+        background-color: $darkgray;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+
+        i {
+          color: $colon-main-color;
+        }
+      }
+    }
+  }
+}

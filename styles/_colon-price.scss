@@ -1,0 +1,11 @@
+@mixin colon-price ($colon-main-color) {
+  height: 70px;
+  padding: 8px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: $colon-main-color;
+  color: rgba(255, 255, 255, 1);
+}

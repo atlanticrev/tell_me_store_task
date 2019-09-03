@@ -1,0 +1,14 @@
+@mixin colon-header {
+  padding: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+
+  h2 {
+    font-size: 29px;
+    margin: 0;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}

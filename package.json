@@ -26,7 +26,11 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "webpack-icons-installer": "^2.0.0"
   }
 }

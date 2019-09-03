@@ -1,0 +1,17 @@
+@import "variables";
+
+@mixin colon-body {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  /* Индивидуальное позиционирование? */
+  margin: 6px;
+  background-color: $gray;
+
+  @media all and (max-width: 480px) {
+    margin: 6px 0;
+  }
+}

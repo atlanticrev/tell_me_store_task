@@ -1,0 +1,34 @@
+@import "variables";
+@import "colon-container";
+@import "colon";
+
+body {
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: $black;
+    box-sizing: border-box;
+
+    @media all and (max-width: 480px){
+        margin: 0;
+    }
+}
+
+.colons-container {
+    @include colon-container;
+}
+
+.colon:nth-child(1) {
+    @include colon($sea);
+}
+
+.colon:nth-child(2) {
+    @include colon($orange);
+}
+
+.colon:nth-child(3) {
+    @include colon($blue);
+}
+
+
+
+

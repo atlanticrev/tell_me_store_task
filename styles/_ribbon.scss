@@ -1,0 +1,22 @@
+@import "variables";
+
+@mixin ribbon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 21px;
+  position: absolute;
+  top: 23px;
+  right: -45px;
+  transform: rotate(45deg);
+  background-color: $red;
+
+  span {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

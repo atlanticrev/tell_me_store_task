@@ -1,0 +1,37 @@
+@import "colon-body";
+@import "colon-header";
+@import "colon-price";
+@import "colon-description";
+@import "colon-action-button";
+@import "colon-services";
+@import "ribbon";
+
+@mixin colon ($colon-main-color) {
+  $main-color: $colon-main-color;
+
+  @include colon-body;
+
+  .ribbon {
+    @include ribbon;
+  }
+
+  .colon__header {
+    @include colon-header;
+  }
+
+  .colon__price {
+    @include colon-price($main-color);
+  }
+
+  .colon__description {
+    @include colon-description;
+  }
+
+  .colon__services {
+    @include colon-services($main-color);
+  }
+
+  .colon__action-button {
+    @include colon-action-button($main-color);
+  }
+}
