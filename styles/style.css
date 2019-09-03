@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     /* Нужно ли это? */
     align-self: stretch;
-    /*min-height: 647px;*/
     width: 320px;
     /* Индивидуальное позиционирование? */
     margin: 6px;
