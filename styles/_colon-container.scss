@@ -1,0 +1,13 @@
+@mixin colon-container {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-content: center;
+
+  @media all and (max-width: 1000px) {
+    grid-template-columns: 320px;
+  }
+}
+
+
