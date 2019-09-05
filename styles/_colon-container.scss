@@ -16,6 +16,7 @@
 
   @media all and (max-width: 1000px) {
     grid-template-columns: 320px;
+    grid-template-rows: auto;
   }
 
   & > div {
@@ -26,7 +27,7 @@
     @include colon-header;
   }
 
-  .colon__header:nth-child(2) {
+  .colon__header_with-ribbon {
     position: relative;
     overflow: hidden;
 
@@ -39,18 +40,6 @@
     @include colon-price($sea);
   }
 
-  .colon__description {
-    @include colon-description;
-  }
-
-  .colon__services {
-    @include colon-services($sea);
-  }
-
-  .colon__action-button {
-    @include colon-action-button($sea);
-  }
-
   .colon__price_orange {
     background-color: $orange;
   }
@@ -59,12 +48,32 @@
     background-color: $blue;
   }
 
-  .colon__list-mark_orange {
-    background-color: $orange;
+  .colon__description {
+    @include colon-description;
   }
 
-  .colon__list-mark_blue {
-    background-color: $orange;
+  .colon__services {
+    @include colon-services($sea);
+  }
+
+  .colon__services_orange {
+    @include colon-services($orange);
+  }
+
+  .colon__services_blue {
+    @include colon-services($blue);
+  }
+
+  .colon__action-button {
+    @include colon-action-button($sea);
+  }
+
+  .colon__action-button_orange {
+    @include colon-action-button($orange);
+  }
+
+  .colon__action-button_blue {
+    @include colon-action-button($blue);
   }
 }
 

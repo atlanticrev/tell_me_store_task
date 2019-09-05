@@ -12,18 +12,6 @@ body {
     @include colon-container;
 }
 
-.colon:nth-child(1) {
-    @include colon($sea);
-}
-
-.colon:nth-child(2) {
-    @include colon($orange);
-}
-
-.colon:nth-child(3) {
-    @include colon($blue);
-}
-
 
 
 
