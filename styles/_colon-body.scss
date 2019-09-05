@@ -1,9 +1,11 @@
 @import "variables";
 
 @mixin colon-body {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 109px 86px 1fr 1fr 104px;
+  display: flex;
+  flex-direction: column;
+  //display: grid;
+  //grid-template-columns: auto;
+  //grid-template-rows: 109px 86px minmax(100px, auto) auto 104px;
   position: relative;
   overflow: hidden;
   background-color: $gray;

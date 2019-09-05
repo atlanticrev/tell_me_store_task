@@ -1,12 +1,70 @@
+@import "colon-body";
+@import "colon-header";
+@import "colon-price";
+@import "colon-description";
+@import "colon-action-button";
+@import "colon-services";
+@import "ribbon";
+@import "variables";
+
 @mixin colon-container {
   display: grid;
   grid-template-columns: 320px 320px 320px;
-  grid-template-rows: auto;
-  grid-gap: 10px;
+  grid-template-rows: 109px 86px minmax(100px, auto) auto 104px;
+  grid-column-gap: 10px;
   justify-content: center;
 
   @media all and (max-width: 1000px) {
     grid-template-columns: 320px;
+  }
+
+  & > div {
+    background-color: $gray;
+  }
+
+  .colon__header {
+    @include colon-header;
+  }
+
+  .colon__header:nth-child(2) {
+    position: relative;
+    overflow: hidden;
+
+    .ribbon {
+      @include ribbon;
+    }
+  }
+
+  .colon__price {
+    @include colon-price($sea);
+  }
+
+  .colon__description {
+    @include colon-description;
+  }
+
+  .colon__services {
+    @include colon-services($sea);
+  }
+
+  .colon__action-button {
+    @include colon-action-button($sea);
+  }
+
+  .colon__price_orange {
+    background-color: $orange;
+  }
+
+  .colon__price_blue {
+    background-color: $blue;
+  }
+
+  .colon__list-mark_orange {
+    background-color: $orange;
+  }
+
+  .colon__list-mark_blue {
+    background-color: $orange;
   }
 }
 
